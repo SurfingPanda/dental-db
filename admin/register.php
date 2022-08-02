@@ -27,6 +27,7 @@ session_start();
 
                                     <div class="card-header"><h3 class="text-center font-weight-light my-4">Sign-up</h3></div>
                                     <div class="card-body">
+                                        
                                         <form action="register-user.php" method="POST">
                                             <div class="row mb-3">
                                                 <div class="col-md-6">
@@ -43,7 +44,7 @@ session_start();
                                                 </div>
                                             </div>
                                             <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputEmail" type="email" placeholder="name@example.com" required/>
+                                                <input class="form-control" id="inputEmail" type="email" name="email" placeholder="name@example.com" required/>
                                                 <label for="inputEmail">Email address</label>
                                             </div>
                                             <div class="row mb-3">
@@ -55,7 +56,7 @@ session_start();
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-floating mb-3 mb-md-0">
-                                                        <input class="form-control" id="inputPasswordConfirm" name="confirm_password" type="password" placeholder="Confirm password" required />
+                                                        <input class="form-control" id="inputPasswordConfirm" name="cpassword" type="password" placeholder="Confirm password" required />
                                                         <label for="inputPasswordConfirm">Confirm Password</label>
                                                     </div>
                                                 </div>

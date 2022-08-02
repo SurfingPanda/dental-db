@@ -2,7 +2,8 @@
 session_start();
 include('admin/config/dbcon.php');
 
-if(isset($_POST['register-btn'])){
+if(isset($_POST['register-btn']))
+{
     $fname = mysqli_real_escape_string($con, $_POST['fname']);
     $lname = mysqli_real_escape_string($con, $_POST['lname']);
     $email = mysqli_real_escape_string($con, $_POST['email']);
@@ -11,8 +12,8 @@ if(isset($_POST['register-btn'])){
 
     if($password == $confirm_password)
     {
-        //Checks email if it already exist
-        $checkemail = "SELECT email FROM users WHERE email = '$email'";
+        //Checks email
+        $checkemail = "SELECT email FROM users WHERE email='$email'";
         $checkemail_run = mysqli_query($con, $checkemail);
 
         if(mysqli_num_rows($checkemail_run) > 0)
@@ -24,12 +25,12 @@ if(isset($_POST['register-btn'])){
         }
         else
         {
-            $user_query = "INSERT INTO users (fname,lname,email,password) VALUES ('$fname','$lname','$email','$password')";
+            $user_query = "INSERT INTO users (fname, lname, email, password) VALUES ('$fname','$lname','$email','$password')";
             $user_query_run = mysqli_query($con, $user_query);
 
             if($user_query_run)
             {
-                $_SESSION['message'] = "You have registered succesfully!";
+                $_SESSION['message'] = "You have registered successfully!";
                 header("Location: login.php");
                 exit(0);
             }
