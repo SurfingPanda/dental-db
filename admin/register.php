@@ -22,9 +22,6 @@ session_start();
                         <div class="row justify-content-center">
                             <div class="col-lg-7">
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
-
-                                <?php include('message.php'); ?>
-
                                     <div class="card-header"><h3 class="text-center font-weight-light my-4">Sign-up</h3></div>
                                     <div class="card-body">
                                         
