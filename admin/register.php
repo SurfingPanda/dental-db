@@ -59,7 +59,7 @@ session_start();
                                                 </div>
                                             </div>
                                             <div class="mt-4 mb-0">
-                                                <div class="d-grid"><button type="submit" name="register-btn" class="btn btn-primary">Register now</button></div>
+                                                <div class="d-grid"><button type="submit" name="register_btn" class="btn btn-primary">Register now</button></div>
                                             </div>
                                         </form>
 
