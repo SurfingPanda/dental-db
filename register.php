@@ -1,5 +1,6 @@
 <?php
 include('includes/header.php');
+include('includes/navbar.php');
 ?>
 
 <div class="py-5">
@@ -35,7 +36,6 @@ include('includes/header.php');
                         <div class="form-group mb-3">
                             <button type="submit" class="btn btn-primary">Login</button>
                         </div>
-                        <h6>Go back to <a href="login.php">login page</a></h6>
                     </div>
                 </div>
             </div>
