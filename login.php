@@ -16,17 +16,19 @@ include('includes/navbar.php');
                     </div>
                     <div class="card-body">
                         
-                        <div class="form-group mb-3">
-                            <label for="">Email</label>
-                            <input type="email" placeholder="Enter email address" class="form-control">
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="">Password</label>
-                            <input type="password" placeholder="Enter password" class="form-control">
-                        </div>
-                        <div class="form-group mb-3">
-                            <button type="submit" class="btn btn-primary">Login</button>
-                        </div>
+                        <form action="logincode.php" method="POST">
+                            <div class="form-group mb-3">
+                                <label for="">Email</label>
+                                <input type="email" name="email" placeholder="Enter email address" class="form-control">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="">Password</label>
+                                <input type="password" name="password" placeholder="Enter password" class="form-control">
+                            </div>
+                            <div class="form-group mb-3">
+                                <button type="submit" name="login-btn" class="btn btn-primary">Login</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
