@@ -35,7 +35,7 @@ if(isset($_POST['login-btn']))
         }
         elseif($_SESSION['auth_role'] == '0') // 0 = USER
         {
-            $_SESSION['message'] = "You are logged in!";
+            $_SESSION['message'] = "Welcome to your Dashboard!";
             header("Location: index.php");
             exit(0);
         } 
