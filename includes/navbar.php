@@ -19,15 +19,16 @@
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <?= $_SESSION['auth-user']['user_name']; ?>
           </a>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">My Profile</a></li>
-            <li><a class="dropdown-item" href="logout.php">Logout</a></li>
-            
+            <li>
+              <form action="allcode.php" method="POST">
+                <button type="submit" name="logout-btn" class="dropdown-item">Logout</button>
+              </form>
+            </li>
           </ul>
         </li>
-        
         <?php else : ?>
-
         <li class="nav-item">
           <a class="nav-link" href="login.php">Login</a>
         </li>

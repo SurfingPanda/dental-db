@@ -11,8 +11,7 @@ include('includes/navbar.php');
 
                 <?php include('message.php'); ?>
 
-                <h3>Hello</h3>
-                <button class="btn btn-primary">Login</button>
+                
             </div>
         </div>
     </div>
