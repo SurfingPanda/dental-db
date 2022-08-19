@@ -11,6 +11,7 @@ include('includes/navbar.php');
 
                 <?php include('message.php'); ?>
 
+                <h1>Dashboard</h1>
                 
             </div>
         </div>
