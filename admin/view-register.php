@@ -54,7 +54,8 @@
                                         }
                                         ?>
                                     </td>
-                                    <td><a href="edit-user.php" class="btn btn-success">Edit</a><button type="button" class="btn btn-danger">Delete</button></td>
+                                    <td><a href="user-edit.php?id=<?=$row['id'];?>" class="btn btn-success">Edit</a>
+                                        <button type="button" class="btn btn-danger">Delete</button></td>
                                 </tr>
                                 <?php
                             }
