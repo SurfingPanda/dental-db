@@ -5,9 +5,11 @@
 
 <div class="container-fluid px-4">
     <h1 class="mt-4">Users</h1>
+    <a href="view-register.php" class="btn btn-danger float-end">Back</a>
     <ol class="breadcrumb mb-4">
         <li class="breadcrumb-item active">Dashboard</li>
-        <li class="breadcrumb-item">Users</li>
+        <li class="breadcrumb-item active">Users</li>
+        <li class="breadcrumb-item">Edit user</li>
     </ol>
     <div class="row">
         <div class="col-md-12">

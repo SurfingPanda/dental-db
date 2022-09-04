@@ -1,6 +1,34 @@
 <?php
     include('authentication.php');
 
+    if(isset($_POST['add-user']))
+    {
+        $fname = $_POST['fname'];
+        $lname = $_POST['lname'];
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+        $role_as = $_POST['role_as'];
+        $status = $_POST['status'] == true ? '1' : '0';
+
+        $query = "INSERT INTO users (fname, lname, email, password, role_as, status) VALUES ('$fname', '$lname', '$email', '$password', '$role_as', '$status')";
+        $query_run = mysqli_query($con, $query);
+
+        if($query_run)
+        {
+            $_SESSION['message'] = "You have successfully added a user.";
+            header('Location: view-register.php');
+            exit(0);
+        }
+        else
+        {
+            $_SESSION['message'] = "Something went wrong.";
+            header('Location: view-register.php');
+            exit(0);
+        }
+    }
+
+
+
     if(isset($_POST['update-user']))
     {
         $user_id = $_POST['user-id'];

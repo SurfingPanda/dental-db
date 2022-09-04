@@ -17,8 +17,8 @@
 
         <div class="card">
             <div class="card-header">
+                <a href="register-admin.php" class="btn btn-primary float-end">Add user</a>
                 <h4>Registered Users</h4>
-                    <a href="register-admin.php" class="btn btn-primary float-end">Add admin</a>
             </div>
             <div class="card-body">
                  
