@@ -30,7 +30,10 @@
                             {
                             ?>
 
-                            <form action="">
+                            <form action="code.php" method="POST">
+                                
+                                <input type="hidden" name="user-id" value="<?=$user['id'];?>">
+
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
                                         <label for="">First name</label>
@@ -67,7 +70,7 @@
                                     </div>
                                     
                                     <div class="col-md-12 mb-3">
-                                        <button type="submit" class="btn btn-primary">Update</button>
+                                        <button type="submit" name="update-user" class="btn btn-primary">Update</button>
                                     </div>
                                 </div>
                             </form>

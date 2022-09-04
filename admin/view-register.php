@@ -12,9 +12,13 @@
     <div class="row">
 
     <div class="col-md-12">
+        
+        <?php include('message.php'); ?>
+
         <div class="card">
             <div class="card-header">
                 <h4>Registered Users</h4>
+                    <a href="register-admin.php" class="btn btn-primary float-end">Add admin</a>
             </div>
             <div class="card-body">
                  
