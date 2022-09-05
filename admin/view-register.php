@@ -30,7 +30,7 @@
                             <th>Last Name</th>
                             <th>Email</th>
                             <th>Roles</th>
-                            <th>Action</th>
+                            <th colspan="2">Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -59,7 +59,10 @@
                                         ?>
                                     </td>
                                     <td><a href="user-edit.php?id=<?=$row['id'];?>" class="btn btn-success">Edit</a>
-                                        <button type="button" class="btn btn-danger">Delete</button></td>
+                                        <form action="code.php" method="POST" class="d-inline">
+                                            <button type="submit" name="user-delete" value="<?= $row['id'];?>" class="btn btn-danger">Delete</button>
+                                        </form>
+                                    </td>
                                 </tr>
                                 <?php
                             }
