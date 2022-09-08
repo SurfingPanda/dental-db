@@ -58,9 +58,9 @@
                                         }
                                         ?>
                                     </td>
-                                    <td><a href="user-edit.php?id=<?=$row['id'];?>" class="btn btn-success">Edit</a>
+                                    <td><a href="user-edit.php?id=<?=$row['id'];?>" class="btn btn-success"><i class="fa-regular fa-pen-to-square"></i></a>
                                         <form action="code.php" method="POST" class="d-inline">
-                                            <button type="submit" name="user-delete" value="<?= $row['id'];?>" class="btn btn-danger">Delete</button>
+                                            <button type="submit" name="user-delete" value="<?= $row['id'];?>" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
                                         </form>
                                     </td>
                                 </tr>
