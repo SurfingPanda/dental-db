@@ -7,8 +7,10 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Dashboard - Dentrix</title>
-        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+
         <link href="css/styles.css" rel="stylesheet" />
+        <link rel="css/jquery.dataTables.min.css" href="style.css">
+        <link rel="css/dataTables.bootstrap5.min.css" href="style.css">
         <link rel="icon" href="/images/favicon.ico">
         
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
