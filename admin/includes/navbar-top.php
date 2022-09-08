@@ -1,4 +1,4 @@
-<nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+<nav class="sb-topnav navbar navbar-expand navbar-dark bg-primary">
     <!-- Navbar Brand-->
     <a class="navbar-brand ps-3" href="index.php">Dentrix</a>
     <!-- Sidebar Toggle-->
@@ -16,11 +16,8 @@
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#!">Settings</a></li>
-                <li><a class="dropdown-item" href="#!">Activity Log</a></li>
-                <li><hr class="dropdown-divider" /></li>
                 <li>
-                    <form action="allcode.php" method="POST">
+                    <form action="../allcode.php" method="POST">
                         <button type="submit" name="logout-btn" class="dropdown-item">Logout</button>
                     </form>
                 </li>
